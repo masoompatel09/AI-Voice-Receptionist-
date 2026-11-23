@@ -1,0 +1,127 @@
+# ==========================================
+# Sensitive & Confidential Files (Credentials / Secrets)
+# ==========================================
+# Environment variables and API keys
+.env
+.env.*
+*.env
+!.env.example
+!.env.template
+
+# Secret keys, certificates, and authentication tokens
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+*.pub
+id_rsa*
+id_ed25519*
+secrets.json
+credentials.json
+client_secret*.json
+service-account*.json
+token.json
+auth.json
+
+# Tunneling credentials / configs (ngrok, localtunnel, etc.)
+ngrok.yml
+.ngrok
+*.ngrok
+
+# ==========================================
+# Audio, Call Recordings & PII / Transcripts
+# ==========================================
+# Call audio, caller recordings, and speech synthesis cache
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.m4a
+*.mulaw
+*.raw
+*.pcm
+recordings/
+transcripts/
+audio/
+temp/
+tmp/
+
+# ==========================================
+# Python Artifacts & Caches
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Logs & Databases
+# ==========================================
+*.log
+logs/
+*.sqlite
+*.sqlite3
+*.db
+
+# ==========================================
+# Operating System & Editor Files
+# ==========================================
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
